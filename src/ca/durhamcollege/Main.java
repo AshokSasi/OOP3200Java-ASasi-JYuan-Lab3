@@ -20,7 +20,7 @@ public class Main
 
 
         //Constants
-        final int NUMBER_OF_OBJECTS = 1;
+        final int NUMBER_OF_OBJECTS = 3;
         final int MIN_YEARS = 2000;
         final int MAX_YEARS = 2099;
         final int MIN_TICKET_NUMBER = 1;

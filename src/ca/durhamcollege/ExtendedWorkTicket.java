@@ -46,6 +46,7 @@ public class ExtendedWorkTicket extends WorkTicket
         {
             super.setWorkTicket(ticketNumber,clientID,workTicketDate,issueDescription);
 
+            //check if the myOpen variable is true or false and set it as such
             if (myOpen==true)
             {
                 openTicket();
@@ -62,6 +63,7 @@ public class ExtendedWorkTicket extends WorkTicket
             return false;
         }
     }
+
     @Override
     public String toString()
     {
