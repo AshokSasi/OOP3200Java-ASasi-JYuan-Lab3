@@ -1,8 +1,8 @@
 /*
-Title: OOP3200Java-ASasi-JYuan-Lab2
+Title: OOP3200Java-ASasi-JYuan-Lab3
 Name:Ashok Sasitharan 100745484, Jacky Yuan 100520106
-Date: November 20 2020
-Changes: N/A
+Date: December 02 2020
+Changes: Added a Extended Workticket class and adjusted input section in main to take in a ticket open or closed boolean input
  */
 package ca.durhamcollege;
 import java.time.LocalDate;

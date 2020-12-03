@@ -1,3 +1,9 @@
+/*
+Title: OOP3200Java-ASasi-JYuan-Lab3
+Name:Ashok Sasitharan 100745484, Jacky Yuan 100520106
+Date: December 02 2020
+Changes: Added a Extended Workticket class and adjusted input section to take in a ticket open or closed input
+ */
 package ca.durhamcollege;
 
 import java.time.LocalDate;
@@ -38,6 +44,16 @@ public class ExtendedWorkTicket extends WorkTicket
 
     }
     //PUBLIC METHODS
+
+    /**
+     * Accepts all of the ExtendedWorkTicket parameters and checks if they are valid. If they are then create an ExtendedWorkticket, if not return false
+     * @param ticketNumber
+     * @param clientID
+     * @param workTicketDate
+     * @param issueDescription
+     * @param myOpen
+     * @return boolean
+     */
     public boolean setWorkTicket( int ticketNumber,  String clientID,  LocalDate workTicketDate,  String issueDescription, boolean myOpen)
     {
 
@@ -64,6 +80,10 @@ public class ExtendedWorkTicket extends WorkTicket
         }
     }
 
+    /**
+     * Outputs a formatted string of the ExtendedWorkTicket object
+     * @return string
+     */
     @Override
     public String toString()
     {

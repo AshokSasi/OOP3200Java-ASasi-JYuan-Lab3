@@ -1,8 +1,8 @@
 /*
-Title: OOP3200Java-ASasi-JYuan-Lab2
+Title: OOP3200Java-ASasi-JYuan-Lab3
 Name:Ashok Sasitharan 100745484, Jacky Yuan 100520106
-Date: November 20 2020
-Changes: N/A
+Date: December 02 2020
+Changes: Added a ExtendedWorkticket class and adjusted input section to take in a ticket open or closed input
  */
 package ca.durhamcollege;
 
@@ -32,7 +32,7 @@ public class Main
         String issueDescription;
         boolean myOpen;
         boolean isValid =false;
-        WorkTicket[] workticketObj = new WorkTicket [NUMBER_OF_OBJECTS];
+       // WorkTicket[] workticketObj = new WorkTicket [NUMBER_OF_OBJECTS];
         ExtendedWorkTicket[] extendedWorkticketObj = new ExtendedWorkTicket [NUMBER_OF_OBJECTS];
         String date;
 
@@ -72,8 +72,10 @@ public class Main
                     System.out.print("Enter the description of the issue: ");
                     issueDescription = keyboard.nextLine();
 
-                    System.out.println("Ticket status (true/false): ");
+                    //prompts for ticket status input
+                    System.out.print("Is ticket open? (true/false): ");
                     myOpen=keyboard.nextBoolean();
+
                     //set the input into a WorkTicket object
                     extendedWorkticketObj[i]= new ExtendedWorkTicket(ticketNumber,clientID,workTicketDate,issueDescription,myOpen);
 
